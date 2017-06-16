@@ -3,12 +3,13 @@ from setuptools import setup
 
 setup(
     name = 'EIPy',
-    version = '0.1',
+    version = '0.3',
     author = 'Halcyon Lab',
+    packages=['EIPy'],
     description = 'Command-line EIP location tool',
     keywords = 'EIP offset exploit infosec pentest',
     url = 'http://github.com/halcyonlab/eipy',
     entry_points = {
-        'console_scripts': ['eipy=EIPy.eipy:main'],
+        'console_scripts': ['eipy=EIPy.__main__:main'],
     }
 )
